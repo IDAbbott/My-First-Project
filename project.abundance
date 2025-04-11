@@ -207,7 +207,21 @@
             "type": null,
             "resolution": 96,
             "importIndex": 0,
-            "fileName": null
+            "partName": "My-First-Project"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.06767586821015138,
+            "y": 0.5869565217391304,
+            "uniqueID": 1744351546952,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ],
+            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
@@ -289,7 +303,7 @@
             "ap2ID": 1743640240915
         }
     ],
-    "unitsKey": "Inches",
+    "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": [],
     "filetypeVersion": 1
