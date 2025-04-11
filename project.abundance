@@ -57,8 +57,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.337220602526725,
-            "y": 0.7951070336391437,
+            "x": 0.2956366874443455,
+            "y": 0.7415458937198068,
             "uniqueID": 1743640262696,
             "ioValues": [
                 {
@@ -130,7 +130,7 @@
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 10
+                    "ioValue": 0
                 },
                 {
                     "name": "y-axis degrees",
@@ -208,20 +208,6 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "My-First-Project"
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.06767586821015138,
-            "y": 0.5869565217391304,
-            "uniqueID": 1744351546952,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 5
-                }
-            ],
-            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
