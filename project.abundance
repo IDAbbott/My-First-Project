@@ -11,8 +11,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.9731132075471699,
+            "y": 0.4950298210735587,
             "uniqueID": 1743640240915,
             "ioValues": [
                 {
@@ -63,7 +63,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1743640257226
+                    "ioValue": ""
                 },
                 {
                     "name": "xDist",
@@ -81,25 +81,6 @@
             "description": "Moves a shape laterally in X, Y, Z."
         },
         {
-            "atomType": "Fusion",
-            "name": "Fusion",
-            "x": 0.3129251700680272,
-            "y": 0.44648318042813456,
-            "uniqueID": 1743640268026,
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1743640262696
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1743640244069
-                }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-            "unionType": "Fusion"
-        },
-        {
             "atomType": "Extrude",
             "name": "Extrude",
             "x": 0.43926141885325565,
@@ -108,11 +89,11 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1743640268026
+                    "ioValue": ""
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 1743640244069
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -126,7 +107,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1743640281617
+                    "ioValue": ""
                 },
                 {
                     "name": "x-axis degrees",
@@ -134,7 +115,7 @@
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 1743640281617
                 },
                 {
                     "name": "z-axis degrees",
@@ -146,8 +127,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.685131195335277,
-            "y": 0.7217125382262997,
+            "x": 0.6825471698113208,
+            "y": 0.7137176938369781,
             "uniqueID": 1743640319231,
             "ioValues": [
                 {
@@ -156,7 +137,7 @@
                 },
                 {
                     "name": "geometry1",
-                    "ioValue": 1743640281617
+                    "ioValue": 1743640295397
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -164,8 +145,8 @@
         {
             "atomType": "Intersection",
             "name": "Intersection",
-            "x": 0.6783284742468416,
-            "y": 0.40672782874617736,
+            "x": 0.6783018867924528,
+            "y": 0.4274353876739563,
             "uniqueID": 1743640338067,
             "ioValues": [
                 {
@@ -174,7 +155,7 @@
                 },
                 {
                     "name": "geometry2",
-                    "ioValue": 1743640281617
+                    "ioValue": ""
                 }
             ],
             "description": "The space shared by two shapes."
@@ -182,13 +163,13 @@
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.8231292517006803,
-            "y": 0.26299694189602446,
+            "x": 0.8202830188679245,
+            "y": 0.2445328031809145,
             "uniqueID": 1743640358052,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1743640338067
+                    "ioValue": ""
                 },
                 {
                     "name": "Resolution (dpi)",
@@ -213,36 +194,15 @@
     "allConnectors": [
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
+            "ap2Name": "height",
             "ap2Primary": false,
             "ap1ID": 1743640244069,
-            "ap2ID": 1743640268026
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1743640257226,
-            "ap2ID": 1743640262696
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap2Primary": false,
-            "ap1ID": 1743640262696,
-            "ap2ID": 1743640268026
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1743640268026,
             "ap2ID": 1743640281617
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
+            "ap2Name": "y-axis degrees",
+            "ap2Primary": false,
             "ap1ID": 1743640281617,
             "ap2ID": 1743640295397
         },
@@ -250,15 +210,8 @@
             "ap1Name": "geometry",
             "ap2Name": "geometry1",
             "ap2Primary": false,
-            "ap1ID": 1743640281617,
+            "ap1ID": 1743640295397,
             "ap2ID": 1743640319231
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
-            "ap1ID": 1743640281617,
-            "ap2ID": 1743640338067
         },
         {
             "ap1Name": "geometry",
@@ -273,20 +226,6 @@
             "ap2Primary": false,
             "ap1ID": 1743640295397,
             "ap2ID": 1743640338067
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Part Name",
-            "ap2Primary": false,
-            "ap1ID": 1743640319231,
-            "ap2ID": 1743640358052
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": false,
-            "ap1ID": 1743640338067,
-            "ap2ID": 1743640358052
         },
         {
             "ap1Name": "geometry",
