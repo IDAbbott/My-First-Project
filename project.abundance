@@ -44,39 +44,21 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 50
                 }
             ],
             "description": "Creates a new circle."
         },
         {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.43926141885325565,
-            "y": 0.3486238532110092,
-            "uniqueID": 1743640281617,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1743640257226
-                },
-                {
-                    "name": "height",
-                    "ioValue": 1743640244069
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.5238095238095238,
-            "y": 0.7675840978593272,
+            "x": 0.5378450578806767,
+            "y": 0.7946859903381642,
             "uniqueID": 1743640295397,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": 1744441228408
                 },
                 {
                     "name": "x-axis degrees",
@@ -84,7 +66,7 @@
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 1743640281617
+                    "ioValue": 0
                 },
                 {
                     "name": "z-axis degrees",
@@ -92,42 +74,6 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
-        },
-        {
-            "atomType": "Difference",
-            "name": "Difference",
-            "x": 0.6825471698113208,
-            "y": 0.7137176938369781,
-            "uniqueID": 1743640319231,
-            "ioValues": [
-                {
-                    "name": "geometry2",
-                    "ioValue": 1743640295397
-                },
-                {
-                    "name": "geometry1",
-                    "ioValue": 1743640295397
-                }
-            ],
-            "description": "Subtracts shape two from shape one."
-        },
-        {
-            "atomType": "Intersection",
-            "name": "Intersection",
-            "x": 0.6803205699020481,
-            "y": 0.42028985507246375,
-            "uniqueID": 1743640338067,
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": 1743640295397
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": ""
-                }
-            ],
-            "description": "The space shared by two shapes."
         },
         {
             "atomType": "Export",
@@ -138,7 +84,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": 1743640295397
                 },
                 {
                     "name": "Resolution (dpi)",
@@ -158,57 +104,47 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "My-First-Project"
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.28495102404274264,
+            "y": 0.2632850241545894,
+            "uniqueID": 1744441228408,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1743640257226
+                },
+                {
+                    "name": "height",
+                    "ioValue": 30
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
         {
             "ap1Name": "geometry",
-            "ap2Name": "height",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1743640257226,
+            "ap2ID": 1744441228408
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
             "ap2Primary": false,
-            "ap1ID": 1743640244069,
-            "ap2ID": 1743640281617
+            "ap1ID": 1743640295397,
+            "ap2ID": 1743640358052
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 1743640257226,
-            "ap2ID": 1743640281617
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "y-axis degrees",
-            "ap2Primary": false,
-            "ap1ID": 1743640281617,
+            "ap1ID": 1744441228408,
             "ap2ID": 1743640295397
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry1",
-            "ap2Primary": false,
-            "ap1ID": 1743640295397,
-            "ap2ID": 1743640319231
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry2",
-            "ap2Primary": false,
-            "ap1ID": 1743640295397,
-            "ap2ID": 1743640319231
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry1",
-            "ap2Primary": false,
-            "ap1ID": 1743640295397,
-            "ap2ID": 1743640338067
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": false,
-            "ap1ID": 1743640338067,
-            "ap2ID": 1743640358052
         }
     ],
     "unitsKey": "MM",
